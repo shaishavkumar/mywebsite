@@ -1,0 +1,167 @@
+*{
+margin:0; padding:0;box-sizing: border-box;
+}
+/*==========================================Body===========================*/
+body{
+text-size:15px;
+background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url("back.jpg");
+background-repeat:no repeat; background-attachment:fixed;
+background-size:cover;
+font-family: 'Proza Libre', sans-serif;
+color: white;
+}
+/*====================================Top Bar=====================================*/
+nav{
+width:100%; height:12vh;
+background:rgba(0,0,0,0.5);
+color:white;
+display:flex; justify-content:space-between;
+align-items:center;
+}
+/*======================================Logo===========================*/
+.logo{
+width: 35%;
+font-size:150%;
+text-align:center;
+}
+.color{
+color:orange;
+}
+/*===============================================Manu==============================*/
+.menu{
+width:40%;
+display:flex; justify-content: space-around; 
+}
+nav .menu a{
+width:25%;
+text-decoration:none;
+color:white;
+}
+.menu a:hover{
+color: orange;
+}
+.color1{
+color:orange;
+}
+.color1:hover{
+color:white;
+}
+/* =========================================underline effect=============*/
+/* === nav .menu a::after{
+content:'';
+width:0;
+height:2px;
+background:white;
+display:block;
+margin-left:0%;
+transition: .5s;
+}
+nav .menu a:hover::after{
+width:60%;
+}   ===*/
+/*===================================Main===================================*/
+main{
+width:80%;
+height: 80vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+margin-left:9.5%;
+}
+section h2{
+font-size: 300%; font-weight:140; letter-spacing:3px; 
+text-shadow:2px 2px 4px black;
+}
+section p{
+font-size: 130%; letter-spacing:2px;
+text-shadow:1px 1px 2px black;
+}
+section h3{
+font-size:200%; letter-spacing:3px; 
+text-shadow:1px 1px 2px black;
+}
+section a{
+padding: 12px 30px;
+border-radius: 5px;
+outline:none;
+font-size: 100%;
+font-weigth:500;
+text-decoration:none;
+letter-spacing:1px;
+}
+/*==============================================Buttons==============================*/
+.button1{
+background-color:orange;
+color:black;
+margin:30px;
+box-shadow:2px 2px 4px black;
+transition: all 0.2s linear;
+}
+.button1:hover{
+background-color:white;
+}
+.button2{
+background-color: orange;
+color:black;
+box-shadow:2px 2px 4px black;
+transition: all 0.2s linear;
+}
+.button2:hover{
+background-color:white;
+}
+/*======================================Change Contant In Main(h2)===========================*/
+.change_content:after{
+content: "";
+animation: changetext 15s infinite linear;
+color: orange;
+}
+@keyframes changetext{
+  0%{content:"Design";}
+  20%{content:"Logos";}
+  40%{content:"Brochure";}
+  60%{content:"Packaging";}
+  80%{content:"Posters";}
+  100%{content:"Banners";}
+}
+
+/*=================================Social Media===============================*/
+.social{
+margin-left:32px;
+}
+.social a{
+height: 10px;
+width: 10px;
+background-color:#f5f6fa;
+border-radius:100px;
+margin:10px;
+box-shadow:2px 2px 4px black;;
+}
+a i{
+transition: all 0.2s linear;
+}
+a:hover i{
+transform: scale(1.4);
+}
+/*==========================Social Media Icon Color=============================*/
+a:nth-child(1){
+  color:#3b5998;
+}
+a:nth-child(2){
+  color: #e84393;
+}
+a:nth-child(3){
+  color:#00acee;
+}
+a:nth-child(4){
+  color:#0e76a8;
+}
+
+/*===============================Footer======================================*/
+.footer{
+text-size: 60%;
+color: white;
+display:flex; justify-content: right;
+margin-right: 20px; 
+margin-left: 20px;
+}
